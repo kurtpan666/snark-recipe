@@ -1,0 +1,227 @@
+% Encoding: UTF-8
+
+@Article{ZXZ20,
+  author  = {Jiaheng Zhang and Tiancheng Xie and Yupeng Zhang and Dawn Xiaodong Song},
+  journal = {2020 IEEE Symposium on Security and Privacy (SP)},
+  title   = {Transparent Polynomial Delegation and Its Applications to Zero Knowledge Proof},
+  year    = {2020},
+  pages   = {859-876},
+}
+
+@Article{WTS18,
+  author  = {Riad S. Wahby and Ioanna Tzialla and Abhi Shelat and Justin Thaler and Michael Walfish},
+  journal = {2018 IEEE Symposium on Security and Privacy (SP)},
+  title   = {Doubly-Efficient zkSNARKs Without Trusted Setup},
+  year    = {2018},
+  pages   = {926-943},
+}
+
+@InProceedings{XZZ19,
+  author    = {Xie, Tiacheng and Zhang, Jiaheng and Zhang, Yupeng and Papamanthou, Charalampos and Song, Dawn},
+  booktitle = {Advances in Cryptology -- CRYPTO 2019},
+  title     = {Libra: Succinct Zero-Knowledge Proofs with Optimal Prover Computation},
+  year      = {2019},
+  address   = {Cham},
+  editor    = {Boldyreva, Alexandra and Micciancio, Daniele},
+  pages     = {733--764},
+  publisher = {Springer International Publishing},
+  abstract  = {We present Libra, the first zero-knowledge proof system that has both optimal prover time and succinct proof size/verification time. In particular, if C is the size of the circuit being proved (i) the prover time is O(C) irrespective of the circuit type; (ii) the proof size and verification time are both {\$}{\$}O(d{\backslash}log C){\$}{\$}for d-depth log-space uniform circuits (such as RAM programs). In addition Libra features an one-time trusted setup that depends only on the size of the input to the circuit and not on the circuit logic. Underlying Libra is a new linear-time algorithm for the prover of the interactive proof protocol by Goldwasser, Kalai and Rothblum (also known as GKR protocol), as well as an efficient approach to turn the GKR protocol to zero-knowledge using small masking polynomials. Not only does Libra have excellent asymptotics, but it is also efficient in practice. For example, our implementation shows that it takes 200 s to generate a proof for constructing a SHA2-based Merkle tree root on 256 leaves, outperforming all existing zero-knowledge proof systems. Proof size and verification time of Libra are also competitive.},
+  isbn      = {978-3-030-26954-8},
+}
+
+@InProceedings{Setty20,
+  author    = {Setty, Srinath},
+  booktitle = {Advances in Cryptology -- CRYPTO 2020},
+  title     = {Spartan: Efficient and General-Purpose zkSNARKs Without Trusted Setup},
+  year      = {2020},
+  address   = {Cham},
+  editor    = {Micciancio, Daniele and Ristenpart, Thomas},
+  pages     = {704--737},
+  publisher = {Springer International Publishing},
+  abstract  = {This paper introduces Spartan, a new family of zero-knowledge succinct non-interactive arguments of knowledge (zkSNARKs) for the rank-1 constraint satisfiability (R1CS), an NP-complete language that generalizes arithmetic circuit satisfiability. A distinctive feature of Spartan is that it offers the first zkSNARKs without trusted setup (i.e., transparent zkSNARKs) for NP where verifying a proof incurs sub-linear costs---without requiring uniformity in the NP statement's structure. Furthermore, Spartan offers zkSNARKs with a time-optimal prover, a property that has remained elusive for nearly all zkSNARKs in the literature.},
+  isbn      = {978-3-030-56877-1},
+}
+
+@Article{SL20,
+  author  = {Srinath T. V. Setty and Jonathan Lee},
+  journal = {IACR Cryptol. ePrint Arch.},
+  title   = {Quarks: Quadruple-efficient transparent zkSNARKs},
+  year    = {2020},
+  pages   = {1275},
+  volume  = {2020},
+}
+
+@Article{GLS21,
+  author  = {Alexander Golovnev and Jonathan Lee and Srinath T. V. Setty and Justin Thaler and Riad S. Wahby},
+  journal = {IACR Cryptol. ePrint Arch.},
+  title   = {Brakedown: Linear-time and post-quantum SNARKs for R1CS},
+  year    = {2021},
+  pages   = {1043},
+  volume  = {2021},
+}
+
+@InProceedings{BCR19,
+  author    = {Ben-Sasson, Eli and Chiesa, Alessandro and Riabzev, Michael and Spooner, Nicholas and Virza, Madars and Ward, Nicholas P.},
+  booktitle = {Advances in Cryptology -- EUROCRYPT 2019},
+  title     = {Aurora: Transparent Succinct Arguments for R1CS},
+  year      = {2019},
+  address   = {Cham},
+  editor    = {Ishai, Yuval and Rijmen, Vincent},
+  pages     = {103--128},
+  publisher = {Springer International Publishing},
+  abstract  = {We design, implement, and evaluate a zero knowledge succinct non-interactive argument (SNARG) for Rank-1 Constraint Satisfaction (R1CS), a widely-deployed NP language undergoing standardization. Our SNARG has a transparent setup, is plausibly post-quantum secure, and uses lightweight cryptography. A proof attesting to the satisfiability of n constraints has size {\$}{\$}O({\backslash}log ^2 n){\$}{\$}O(log2n); it can be produced with {\$}{\$}O(n {\backslash}log n){\$}{\$}O(nlogn)field operations and verified with O(n). At 128 bits of security, proofs are less than {\$}{\$}{\{}250{\}}{\backslash},{\backslash}mathrm{\{}kB{\}}{\$}{\$}250kBeven for several million constraints, more than {\$}{\$}10{\{}{\backslash}times {\}}{\$}{\$}10{\texttimes}shorter than prior SNARGs with similar features.},
+  isbn      = {978-3-030-17653-2},
+}
+
+@InProceedings{COS20,
+  author    = {Chiesa, Alessandro and Ojha, Dev and Spooner, Nicholas},
+  booktitle = {Advances in Cryptology -- EUROCRYPT 2020},
+  title     = {Fractal: Post-quantum and Transparent Recursive Proofs from Holography},
+  year      = {2020},
+  address   = {Cham},
+  editor    = {Canteaut, Anne and Ishai, Yuval},
+  pages     = {769--793},
+  publisher = {Springer International Publishing},
+  abstract  = {We present a new methodology to efficiently realize recursive composition of succinct non-interactive arguments of knowledge (SNARKs). Prior to this work, the only known methodology relied on pairing-based SNARKs instantiated on cycles of pairing-friendly elliptic curves, an expensive algebraic object. Our methodology does not rely on any special algebraic objects and, moreover, achieves new desirable properties: it is post-quantum and it is transparent (the setup is public coin).},
+  isbn      = {978-3-030-45721-1},
+}
+
+@Article{KPV19,
+  author  = {Assimakis A. Kattis and Konstantin Panarin and Alexander Yu. Vlasov},
+  journal = {IACR Cryptol. ePrint Arch.},
+  title   = {RedShift: Transparent SNARKs from List Polynomial Commitment IOPs},
+  year    = {2019},
+  pages   = {1400},
+  volume  = {2019},
+}
+
+@Article{AHI17,
+  author  = {Scott Ames and Carmit Hazay and Yuval Ishai and Muthuramakrishnan Venkitasubramaniam},
+  journal = {Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security},
+  title   = {Ligero: Lightweight Sublinear Arguments Without a Trusted Setup},
+  year    = {2017},
+}
+
+@Article{BFH20,
+  author  = {Rishabh Bhadauria and Zhiyong Fang and Carmit Hazay and Muthuramakrishnan Venkitasubramaniam and Tiancheng Xie and Yupeng Zhang},
+  journal = {Proceedings of the 2020 ACM SIGSAC Conference on Computer and Communications Security},
+  title   = {Ligero++: A New Optimized Sublinear IOP},
+  year    = {2020},
+}
+
+@Article{MBK19,
+  author  = {Mary Maller and Sean Bowe and Markulf Kohlweiss and Sarah Meiklejohn},
+  journal = {Proceedings of the 2019 ACM SIGSAC Conference on Computer and Communications Security},
+  title   = {Sonic: Zero-Knowledge SNARKs from Linear-Size Universal and Updatable Structured Reference Strings},
+  year    = {2019},
+}
+
+@InProceedings{CHM20,
+  author    = {Chiesa, Alessandro and Hu, Yuncong and Maller, Mary and Mishra, Pratyush and Vesely, Noah and Ward, Nicholas},
+  booktitle = {Advances in Cryptology -- EUROCRYPT 2020},
+  title     = {Marlin: Preprocessing zkSNARKs with Universal and Updatable SRS},
+  year      = {2020},
+  address   = {Cham},
+  editor    = {Canteaut, Anne and Ishai, Yuval},
+  pages     = {738--768},
+  publisher = {Springer International Publishing},
+  abstract  = {We present a methodology to construct preprocessing zkSNARKs where the structured reference string (SRS) is universal and updatable. This exploits a novel use of holography [Babai et al., STOC 1991], where fast verification is achieved provided the statement being checked is given in encoded form.},
+  isbn      = {978-3-030-45721-1},
+}
+
+@Article{GWC19,
+  author  = {Ariel Gabizon and Zachary J. Williamson and Oana-Madalina Ciobotaru},
+  journal = {IACR Cryptol. ePrint Arch.},
+  title   = {PLONK: Permutations over Lagrange-bases for Oecumenical Noninteractive arguments of Knowledge},
+  year    = {2019},
+  pages   = {953},
+  volume  = {2019},
+}
+
+@InProceedings{Groth16,
+  author    = {Groth, Jens},
+  booktitle = {Advances in Cryptology -- EUROCRYPT 2016},
+  title     = {On the Size of Pairing-Based Non-interactive Arguments},
+  year      = {2016},
+  address   = {Berlin, Heidelberg},
+  editor    = {Fischlin, Marc and Coron, Jean-S{\'e}bastien},
+  pages     = {305--326},
+  publisher = {Springer Berlin Heidelberg},
+  abstract  = {Non-interactive arguments enable a prover to convince a verifier that a statement is true. Recently there has been a lot of progress both in theory and practice on constructing highly efficient non-interactive arguments with small size and low verification complexity, so-called succinct non-interactive arguments (SNARGs) and succinct non-interactive arguments of knowledge (SNARKs).},
+  isbn      = {978-3-662-49896-5},
+}
+
+@Article{PHG13,
+  author  = {Bryan Parno and Jon Howell and Craig Gentry and Mariana Raykova},
+  journal = {2013 IEEE Symposium on Security and Privacy},
+  title   = {Pinocchio: Nearly Practical Verifiable Computation},
+  year    = {2013},
+  pages   = {238-252},
+}
+
+@InProceedings{BBH19,
+  author    = {Ben-Sasson, Eli and Bentov, Iddo and Horesh, Yinon and Riabzev, Michael},
+  booktitle = {Advances in Cryptology -- CRYPTO 2019},
+  title     = {Scalable Zero Knowledge with No Trusted Setup},
+  year      = {2019},
+  address   = {Cham},
+  editor    = {Boldyreva, Alexandra and Micciancio, Daniele},
+  pages     = {701--732},
+  publisher = {Springer International Publishing},
+  abstract  = {One of the approaches to constructing zero knowledge (ZK) arguments relies on ``PCP techniques'' that date back to influential works from the early 1990's [Babai et al., Arora et al. 1991-2]. These techniques require only minimal cryptographic assumptions, namely, the existence of a family of collision-resistant hash functions [Kilian, STOC 1992], and achieve two remarkable properties: (i) all messages generated by the verifier are public random coins, and (ii) total verification time is merely poly-logarithmic in the time needed to na{\"i}vely execute the computation being verified [Babai et al., STOC 1991].},
+  isbn      = {978-3-030-26954-8},
+}
+
+@InProceedings{BR93,
+  author    = {Mihir Bellare and Phillip Rogaway},
+  booktitle = {CCS '93},
+  title     = {Random oracles are practical: a paradigm for designing efficient protocols},
+  year      = {1993},
+}
+
+@InProceedings{KZG10,
+  author    = {Aniket Kate and Gregory M. Zaverucha and Ian Goldberg},
+  booktitle = {ASIACRYPT},
+  title     = {Constant-Size Commitments to Polynomials and Their Applications},
+  year      = {2010},
+}
+
+@InProceedings{BBH17,
+  author    = {Eli Ben-Sasson and Iddo Bentov and Yinon Horesh and Michael Riabzev},
+  booktitle = {Electron. Colloquium Comput. Complex.},
+  title     = {Fast Reed-Solomon Interactive Oracle Proofs of Proximity},
+  year      = {2017},
+}
+
+@Article{BBB18,
+  author  = {Benedikt B{\"u}nz and Jonathan Bootle and Dan Boneh and Andrew Poelstra and Pieter Wuille and Gregory Maxwell},
+  journal = {2018 IEEE Symposium on Security and Privacy (SP)},
+  title   = {Bulletproofs: Short Proofs for Confidential Transactions and More},
+  year    = {2018},
+  pages   = {315-334},
+}
+
+@InProceedings{BGK88,
+  author    = {Michael Ben-Or and Shafi Goldwasser and Joe Kilian and Avi Wigderson},
+  booktitle = {STOC '88},
+  title     = {Multi-prover interactive proofs: how to remove intractability assumptions},
+  year      = {1988},
+}
+
+@Article{AS98,
+  author  = {Sanjeev Arora and Shmuel Safra},
+  journal = {J. ACM},
+  title   = {Probabilistic checking of proofs: a new characterization of NP},
+  year    = {1998},
+  pages   = {70-122},
+  volume  = {45},
+}
+
+@InProceedings{BCS16,
+  author    = {Eli Ben-Sasson and Alessandro Chiesa and Nicholas Spooner},
+  booktitle = {TCC},
+  title     = {Interactive Oracle Proofs},
+  year      = {2016},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
